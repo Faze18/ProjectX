@@ -1,0 +1,10 @@
+<fieldset>
+    <legend>Event Type?</legend>
+    {{#each category}}
+    <div>
+        <input type="checkbox" id="{{id}}" value="{{id}}" />
+        <label for={{category}}>{{{name}}}</label>
+    </div>
+    {{/each}}
+
+</fieldset>

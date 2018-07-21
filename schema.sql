@@ -1,1 +1,2 @@
 CREATE DATABASE EventBuddy;
+CREATE 
