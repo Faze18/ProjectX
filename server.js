@@ -3,7 +3,7 @@ var bodyParser = require("body-parser");
 const fetch = require("node-fetch")
 //var db = require("./models");
 
-var PORT = process.env.PORT || 8081;
+var PORT = process.env.PORT || 8080;
 
 var app = express();
 
