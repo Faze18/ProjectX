@@ -5,7 +5,7 @@ function show_alert2() {
 
     var oArgs = {
 
-        app_key: "7NcRZmf2tJjpdF89",
+        app_key: `${process.env.api_key}`,
 
         q: "music",
 

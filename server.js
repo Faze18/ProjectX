@@ -26,7 +26,9 @@ app.set("view engine", "handlebars");
 
 // Import routes and give the server access to them.
 app.get('/', function (req, res) {
-  fetch("http://api.eventful.com/json/categories/list?app_key=7NcRZmf2tJjpdF89")
+  // fetch("http://api.eventful.com/json/categories/list?app_key=7NcRZmf2tJjpdF89")
+  fetch(`http://api.eventful.com/json/categories/list?app_key=${process.env.api_key}`)
+
     .then(res => res.text())
     .then(categories => {
       console.log(categories)
